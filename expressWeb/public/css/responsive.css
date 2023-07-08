@@ -1,0 +1,163 @@
+@media only screen and (max-width: 1334px) {
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        /* isse mobile wala feeling aayega navlist mein jisse nav-list ke content column hojayega but search right side mein atkega usko thik krne ke liye we have to do column display for navbar also */
+        padding: 20px;
+    }
+
+    .nav-list li {
+        padding: 15px;
+    }
+
+    /* this for navlist ke home,about and service wala ko padding diya */
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        /* isse basically search wala box jo atak raha tha right side mein woh bhi order mein perfectly neeche ajayega
+        but isme we will not add justify,align and text sab because already navbar mein it is applied by default on style.css page */
+    }
+
+    #search {
+        width: 100%;
+        /* this will not kick or move out the search box of navlist outside the background black navbar */
+    }
+
+    .burger {
+        display: block;
+        /* because we want it to be visible in phone resolution */
+        top: 20px;
+        /* this is for that burger so when we click on it it will not expand with navbar, it will remain at its position */
+    }
+
+    .height-class-resp {
+        height: 72px;
+        /* this is the height of navbar or navlist in phone resolution */
+
+    }
+
+    .visibility-class-resp {
+        opacity: 0;
+        /*  or visibility : 0; is also ok, this will basically hide every content of navbar or nav-list and make it in visible in phone resolution */
+
+    }
+
+    .text-small {
+        text-align: center;
+        font-size: 0.5rem;
+    }
+
+    .text-big {
+        text-align: center;
+        font-size: 2.8rem;
+    }
+
+    .btn {
+        text-align: center;
+        padding: 1px 0px;
+        margin: 2px;
+    }
+
+    .box-main {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .paras {
+        padding: 10px;
+
+    }
+
+    .secRight {
+        margin: 0% 0%;
+    }
+
+    .secRight img {
+        height: 12vh;
+
+    }
+
+
+    .contact {
+        height: 50vh;
+    }
+
+    .form input {
+        font-size: 0.6rem;
+        margin: 11px 65px;
+    }
+
+    .sectionsubTag {
+        font-size: 0.9rem;
+    }
+
+    .secondHalf img {
+        height: 8vh;
+        padding: 2vh;
+    }
+
+    .sectionTag {
+        margin: 1%;
+        font-size: 2.8rem;
+    }
+
+    .sectionsubTag {
+        font-size: 0.7rem;
+
+    }
+
+    .btn-dark {
+        margin: 0% 43%;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 587px) {
+    .navbar {
+        width: 180%;
+    }
+
+    .text-big{
+        font-size: 2.8rem;
+    }
+
+    .background {
+        width: 180%;
+    }
+
+    .sectionsubTag{
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .sectionTag{
+        font-size: 2.8rem;
+    }
+
+
+    p.sectionsubTag{
+        width: 100vw;
+        text-align: center;
+    }
+
+
+    .secRight {
+        margin: 0% 40%;
+        padding: 0% 50%;
+    }
+
+    .contact {
+        width: 180%;
+    }
+
+    .text-footer {
+        width: 180%;
+    }
+
+}

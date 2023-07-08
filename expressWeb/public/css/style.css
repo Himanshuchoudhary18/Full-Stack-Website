@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* this is for web page to go to default resolution */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* this will make the contents of navbar like logo, home, about and services display flex and make them in center of web page, but to make it at proper position we need to do the same thing in 
+    nav-list */
+    background-color: black;
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    /* this is by default at row or if still the contents of nav is not in proper order than set display:flex; for navbar ul*/
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.nav-list li {
+    list-style: none;
+
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.9rem;
+    padding: 3.5vh;
+
+}
+
+.nav-list li a:hover {
+    color: lightcoral;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+/* this burger means we gave a name to the class it is just 3 lines of div class which is in order */
+.burger {
+    display: none;
+    /* because we don't need display of burger in PC resolution that's why none */
+    position: absolute;
+    right: 12px;
+    /* These 2 are because we want it in right side of nav-bar or nav-list so first we make it position absolute and then shift it 15px towards center from the right side */
+
+}
+
+/* this is burger class which is known or given as line by us */
+.line {
+    width: 25px;
+    background-color: grey;
+    height: 6px;
+    margin: 4px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    /* again the same thing for logo also to make it at proper position */
+    height: 55px;
+    border: 2px solid grey;
+    border-radius: 50px;
+}
+
+.rightNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    /* this will alignm the search box on center side of navbar */
+}
+
+#search {
+    padding: 0px 65px;
+    border: 2px solid grey;
+    border-radius: 12px;
+}
+
+.background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:  center/cover no-repeat rgba(0, 0, 0, 0.7) url('../img/bg.jpg');
+    width: 100%;
+    height: 500px;
+    background-blend-mode: darken;
+    /* this wil give you dark image so that you can see contents written over it easily*/
+}
+
+.box-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25vh;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.firstSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+.firstHalf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.secondHalf img {
+    height: 15vh;
+    padding: 5vh;
+    border-radius:50px;
+}
+
+
+.text-big {
+    font-size: 2.8rem;
+    color: orange;
+    text-decoration: underline;
+
+}
+
+.text-small {
+    font-size: 1.0rem;
+}
+
+.btn {
+    padding: 5px 6px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    cursor: pointer;
+    color: white;
+}
+
+.btn:hover {
+    font-weight: bolder;
+    color: lightcoral;
+}
+
+.btn-sm {
+    padding: 0px 4px;
+}
+
+
+.secRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* as it is the head of all tags */
+    /* this is for putting the secRight content in center */
+    /* border: 2px solid brown; */
+    border-radius: 15px;
+    margin: 0% 30%;
+    /* background-color: cornsilk; */
+}
+
+.secRight img {
+    height: 25vh;
+    border-radius: 120px;
+    border: 2px solid brown;
+}
+
+
+.sectionTag {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.4rem;
+    text-decoration: underline;
+    color: brown;
+    font-weight: bolder;
+    margin: 7%;
+    /* this will compress the content size inside the box and make it small */
+}
+
+.sectionsubTag {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: medium;
+
+
+}
+
+.thumbnail {
+    padding: 15px;
+
+
+}
+
+.contact {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+    font-size: 1.8rem;
+    background-color: floralwhite;
+}
+
+.form input {
+    display: flex;
+    /* this will be enough for make content in proper order */
+    margin: 20px;
+    width: 80vw;
+    border: 2px solid brown;
+    border-radius: 12px;
+}
+
+.btn-dark {
+    border: 2px solid brown;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0% 47%;
+    /* this is for submit button in center of contact us list */
+}
+
+
+.text-footer {
+    background-color: black;
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: larger;
+    width: 100%;
+}

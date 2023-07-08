@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: lightpink;
+        }
+
+        .item {
+            border: 2px solid brown;
+            border-radius: 12px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            height: 80vh;
+            margin: 50px;
+        }
+
+        .item input {
+            margin: 32px;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            background-color: black;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+
+        }
+
+        nav ul li {
+            display: flex;
+            padding: 8px 55px;
+            font-weight: bolder;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            list-style: none;
+            font-size: 2.1rem;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="/index">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="/index">Contact</a></li>
+                <li><a href="/weather">Join Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h1>Contact Us</h1>
+    <form action="/about" method="post">
+    <div class="item">
+        <input type="text" name="name" placeholder="Enter Your name">
+        <input type="email" name="email" placeholder="Enter Your email">
+        <input type="password" name="password" id="password" placeholder="Enter your password">
+        <input type="number" name="Age" placeholder="Enter Your Age">
+        <button class="btn">Submit</button>
+    </div>
+    </form>
+
+    <footer class="footer">
+        <div>All Rights Reserved | June 2022 | Made By Himanshu</div>
+    </footer>
+</body>
+
+</html>

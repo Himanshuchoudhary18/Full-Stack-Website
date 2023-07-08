@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://kit.fontawesome.com/433888fe69.js" crossorigin="anonymous"></script>
+    <title>Transparent Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: lightgoldenrodyellow;
+            /* this will put the bckground img in background without repeating the img */
+            background-size: cover;
+            /* this will fit the image and cover the whole web page plus adjust the image also otherwise it will be magnified blurred img */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* these 4 will make this container in center for every resolution */
+            margin-top: 10%;
+        }
+
+
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 1% 12%;
+
+        }
+
+        .container h1 {
+            font-size: 2.8rem;
+            text-decoration: underline;
+            color: lightcoral;
+        }
+
+        .box {
+            margin: 10px;
+            color: aqua;
+
+        }
+
+        .box input {
+            border: 2px solid lightcoral;
+            border-radius: 10px;
+            margin: 2px 40px;
+            height: 30px;
+            width: 270px;
+            text-align: center;
+            background: none;
+            color: black;
+            font-weight: bolder;
+        }
+
+        .btn {
+            margin: 10px 40px;
+            width: 100px;
+            height: 24px;
+            background: none;
+            border: 2px solid pink;
+            color: black;
+            font-weight: bolder;
+            border-radius: 8px;
+        }
+
+        .btn:hover {
+            color: orange;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Login To WebSite</h1>
+        <form action="/index" method="post">
+            <div class="box">
+                <input type="name" name="name" id="name" placeholder="Enter Your name">
+            </div>
+            <div class="box">
+                <input type="email" name="email" id="email" placeholder="Enter Your email">
+            </div>
+            <div class="box">
+                <input type="password" name="password" id="password" placeholder="Enter Your password">
+            </div>
+            <div class="box">
+                <input type="Age" name="Age" id="Age" placeholder="Enter Your Age">
+            </div>
+            <button class="btn">Sign In</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
